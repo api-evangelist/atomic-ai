@@ -1,19 +1,47 @@
 aid: atomic-ai
 name: Atomic AI
-description: 'Atomic AI is a company surfaced as a portfolio company of greylock and added to the API
-  Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Atomic AI is a biotechnology company fusing machine learning with structural
+  biology to unlock RNA drug discovery. Founded in 2017 by Raphael Townshend
+  and based in San Francisco, the company builds ATOM-1, an AI foundation model
+  that predicts the three-dimensional structure of RNA to enable the discovery
+  and optimization of RNA-targeted small molecules and RNA-based medicines for
+  previously undruggable targets, including certain cancers and neurodegenerative
+  diseases. Atomic AI pairs its proprietary 3D RNA structure engine with
+  large-scale in-house wet-lab assays. It is backed by Playground Global, 8VC,
+  Greylock, and others. Atomic AI operates as a proprietary R&D drug-discovery
+  platform and does not currently publish a public developer API, SDKs, or API
+  documentation; this profile captures its public identity and web-surface
+  signals for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/atomic-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://atomic.ai/wp-content/uploads/2024/04/logo-dark.svg
 tags:
 - Company
 - Deep Tech
+- Biotechnology
+- Drug Discovery
+- RNA
+- Machine Learning
+- Life Sciences
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,28 @@ maintainers:
 common:
 - type: Website
   url: https://atomic.ai/
+- type: About
+  url: https://atomic.ai/about/
+- type: Technology
+  url: https://atomic.ai/technology/
+- type: Blog
+  url: https://atomic.ai/news/
+- type: Careers
+  url: https://atomic.ai/careers/
+- type: Partnering
+  url: https://atomic.ai/partnering/
+- type: PrivacyPolicy
+  url: https://atomic.ai/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/atomic-ai-rna/
+- type: Twitter
+  url: https://twitter.com/AtomicAICo
+- type: DomainSecurity
+  url: security/atomic-ai-domain-security.yml
+- type: WellKnown
+  url: well-known/atomic-ai-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
