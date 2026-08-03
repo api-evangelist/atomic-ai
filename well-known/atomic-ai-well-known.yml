@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of https://atomic.ai/.well-known/*
+host: https://atomic.ai
+notes: >-
+  atomic.ai serves a /.well-known/openid-configuration (HTTP 200, valid JSON).
+  It is a Kubernetes service-account token issuer discovery document
+  (authorization_endpoint is urn:kubernetes:programmatic_authorization), not a
+  consumer-facing OpenID Connect provider. Captured verbatim as fetched. Bogus
+  /.well-known/ paths return 404, so these statuses are genuine (not an SPA
+  catch-all). No security.txt, oauth-authorization-server, api-catalog, or
+  ai-plugin.json are published.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: atomic-ai-openid-configuration.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
